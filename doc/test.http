@@ -1,0 +1,30 @@
+### homepage
+GET http://localhost:3000
+
+### POST Url Shortener setting google 
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "originalURL": "http://www.google.com",
+    "alias": "google"
+}
+
+### GET /google redirect to www.google.com
+GET http://localhost:3000/google
+
+
+### POST Url Shortener setting google 
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "originalURL": "http://www.nus.edu.sg",
+    "alias": "nus"
+}
+### GET /google redirect to www.google.com
+GET http://localhost:3000/nus
+
+### GET /123 error test
+GET http://localhost:3000/123
+
